@@ -1,0 +1,8 @@
+PMS móvil: Voz y Asesor IA
+
+1. Resumen en voz: funciona en navegadores compatibles mediante síntesis de voz. Sin clave de OpenAI.
+2. Asesor IA: requiere desplegar el sitio mediante repositorio Git conectado a Netlify (o Netlify CLI con Functions). Un simple drag & drop de archivos estáticos puede no publicar la función.
+3. En Netlify > Environment variables agregá OPENAI_API_KEY y ADVISOR_ACCESS_CODE (un código largo elegido por vos). Nunca en el código. Opcional OPENAI_MODEL=gpt-5.6. El usuario ingresa el código al consultar por primera vez cada sesión.
+4. Como el sitio es público, el endpoint podría generar consumos de API por terceros. Antes de publicarlo abiertamente, incorporar control de acceso, límites de solicitudes y límites de gasto.
+5. Probá el resumen en voz y luego el Asesor IA tras desplegar la función; las dos funciones son independientes.
+6. Los importes de la Demo son simulados x4.
